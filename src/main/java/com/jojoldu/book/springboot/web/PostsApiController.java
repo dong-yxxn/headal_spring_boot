@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor//생성자로 Bean 주입받게 해주는 메소드 -> final 선언된 모든 필드 생성자 자동생성
 @RestController//@Controller + @ResponseBody -> @ResponseBody는 따로 생성안해도 됨
+//@ResponseBody: Java객체 -> HttpResponse의 responseBody로 JSON or XML형식으로 전달
 public class PostsApiController {
     private final PostsService postsService;
 
