@@ -12,6 +12,7 @@ public class PostsResponseDto {
     private String author;
 
     public PostsResponseDto(Posts entity){
+        //Entity의 필드 중 일부만 사용 -> 생성자로 Entity를 받아서 필드 추가
         this.id = entity.getId();
         this.title = entity.getTitle();
         this.content = entity.getContent();
