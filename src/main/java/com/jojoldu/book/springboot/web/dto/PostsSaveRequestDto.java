@@ -7,6 +7,9 @@ import lombok.NoArgsConstructor;
 
 @Getter
 @NoArgsConstructor
+//lombok 어노테이션
+//필드의 생성자 자동 생성
+//final 적용된 필드는 에러 -> @RequiredArgsConstructor 적용
 public class PostsSaveRequestDto {
     private String title;
     private String content;
